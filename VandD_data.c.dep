@@ -1,0 +1,20 @@
+VandD_data.c.o: \
+ C:/Users/16134/Desktop/masters/Model/VandD_ert_rtw/VandD_data.c \
+ C:/Users/16134/Desktop/masters/Model/VandD_ert_rtw/VandD.h \
+ C:/Users/16134/Desktop/masters/Model/VandD_ert_rtw/rtwtypes.h \
+ C:/PROGRA~1/MATLAB/R2022a/simulink/include/rtw_continuous.h \
+ C:/Users/16134/Desktop/masters/Model/VandD_ert_rtw/rtwtypes.h \
+ C:/PROGRA~1/MATLAB/R2022a/simulink/include/rtw_solver.h \
+ C:/PROGRA~1/MATLAB/R2022a/simulink/include/rtw_continuous.h
+
+C:/Users/16134/Desktop/masters/Model/VandD_ert_rtw/VandD.h:
+
+C:/Users/16134/Desktop/masters/Model/VandD_ert_rtw/rtwtypes.h:
+
+C:/PROGRA~1/MATLAB/R2022a/simulink/include/rtw_continuous.h:
+
+C:/Users/16134/Desktop/masters/Model/VandD_ert_rtw/rtwtypes.h:
+
+C:/PROGRA~1/MATLAB/R2022a/simulink/include/rtw_solver.h:
+
+C:/PROGRA~1/MATLAB/R2022a/simulink/include/rtw_continuous.h:
