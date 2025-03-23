@@ -8,7 +8,7 @@ pipeline{
     stages{
         stage('Prepare Environment'){
             steps {
-                sh 'apt-get update && apt-get install -y sshpass git'
+                sh 'apt-get update && apt-get upgrade && apt-get install -y sshpass git'
             }
         }
             
