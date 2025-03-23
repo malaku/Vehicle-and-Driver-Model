@@ -14,9 +14,11 @@ pipeline{
             
         stage('Clone Repos'){
             steps{
-                def repos = ['Vehicle-and-Driver-Model', 'FW1', 'FW2', 'RW1', 'RW2', 'WAC1', 'WAC2', 'WAC3', 'WAC4']
-                for (repo in repos){
-                    sh "git clone ${env.GIT_REPO}/${repo}.git"
+                script{
+                    def repos = ['Vehicle-and-Driver-Model', 'FW1', 'FW2', 'RW1', 'RW2', 'WAC1', 'WAC2', 'WAC3', 'WAC4']
+                    for (repo in repos){
+                        sh "git clone ${env.GIT_REPO}/${repo}.git"
+                    }
                 }
             }
         }
