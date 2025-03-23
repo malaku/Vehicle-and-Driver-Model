@@ -4,10 +4,6 @@ pipeline{
             image 'debian:lastest'
             args '-u root:root'
         }
-        environment{
-            GIT_REPO = 'https://github.com/malaku'
-            SSH_PASS = 'temppwd'
-        }
     }
     stages{
         stage('Prepare Environment'){
