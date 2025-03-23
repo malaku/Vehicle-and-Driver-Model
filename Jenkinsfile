@@ -13,6 +13,7 @@ pipeline{
         stage('Prepare Environment'){
             steps {
                 sh 'apt-get update && apt-get install -y sshpass git'
+            }
         }
             
         stage('Clone Repos'){
@@ -51,5 +52,5 @@ pipeline{
             }
         }
         
-    }
+        
 }
