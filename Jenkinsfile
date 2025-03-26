@@ -37,14 +37,8 @@ pipeline{
                         [ board: 'beaglebone9', project: 'Vehicle-and-Driver-Model']
                     ]
                     for(entry in projects){
-                        def remoteCmd = """
-                            cd ${entry.project} && \
-                            chmod +x init_can.sh build.sh run.sh && \
-                            ./init_can.sh && \
-                            ./build.sh && \
-                            ./run.sh
-                            """
-                            sh "sshpass -p '${env.SSH_PASS}' ssh -o StrictHostKeyChecking=no debian@${entry.board} '${remoteCmd}'"
+                        def remoteCmd = "cd ${entry.project} && ./init_can.sh && ./run.sh"
+                            sh "sshpass -p 'temppwd' ssh -o StrictHostKeyChecking=no debian@${entry.board} '${remoteCmd}'"
                     }
                 }
             }
